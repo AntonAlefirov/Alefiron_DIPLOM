@@ -26,4 +26,11 @@
       <value>Покупатель</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="6ce79be9-4d4f-4684-bbe0-51ce6d1ce041">
+    <name>ВКМ_АбонентскоеОбслуживание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Абонентское обслуживание</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
