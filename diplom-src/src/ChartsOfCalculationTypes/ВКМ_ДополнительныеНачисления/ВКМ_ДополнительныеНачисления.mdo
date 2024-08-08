@@ -89,8 +89,6 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
   <standardTabularSections>
     <name>BaseCalculationTypes</name>
     <synonym>
@@ -188,16 +186,9 @@
     </standardAttributes>
   </standardTabularSections>
   <predefined>
-    <items id="f7e1d9a9-94d4-4711-809b-1d3bcc576746">
-      <name>ВКМ_ПремияОтПродаж</name>
-      <description>Премия от продаж</description>
-      <code xsi:type="core:StringValue">
-        <value>2</value>
-      </code>
-    </items>
     <items id="8f5ab84a-ccdd-482c-a3a0-dd5b428f1357">
       <name>ВКМ_ПремияФиксированная</name>
-      <description>Премия фиксированная</description>
+      <description>Фиксированная премия</description>
       <code xsi:type="core:StringValue">
         <value>1</value>
       </code>

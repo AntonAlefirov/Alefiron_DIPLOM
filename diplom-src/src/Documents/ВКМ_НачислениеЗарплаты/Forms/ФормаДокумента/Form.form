@@ -724,7 +724,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ДополнительныеНачисления</segments>
+          <segments>1/0:47e22629-8f1d-487f-9904-ec0219b55b4b</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
@@ -736,7 +736,7 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ДополнительныеНачисления.LineNumber</segments>
+            <segments>1/0:47e22629-8f1d-487f-9904-ec0219b55b4b/-2</segments>
           </dataPath>
           <extendedTooltip>
             <name>ДополнительныеНачисленияНомерСтрокиРасширеннаяПодсказка</name>
@@ -763,19 +763,10 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
-          </extInfo>
         </items>
         <items xsi:type="form:FormField">
           <name>ДополнительныеНачисленияСотрудник</name>
@@ -786,7 +777,7 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ДополнительныеНачисления.Сотрудник</segments>
+            <segments>1/0:47e22629-8f1d-487f-9904-ec0219b55b4b/0:637e761d-ca96-415b-850b-f9beb11fc6f8</segments>
           </dataPath>
           <extendedTooltip>
             <name>ДополнительныеНачисленияСотрудникРасширеннаяПодсказка</name>
@@ -813,19 +804,10 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
-          </extInfo>
         </items>
         <items xsi:type="form:FormField">
           <name>ДополнительныеНачисленияВидРасчета</name>
@@ -836,7 +818,7 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ДополнительныеНачисления.ВидРасчета</segments>
+            <segments>1/0:47e22629-8f1d-487f-9904-ec0219b55b4b/0:f4944d51-c7b6-4513-a8f0-76ec0487a8a7</segments>
           </dataPath>
           <extendedTooltip>
             <name>ДополнительныеНачисленияВидРасчетаРасширеннаяПодсказка</name>
@@ -863,19 +845,10 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
-          </extInfo>
         </items>
         <items xsi:type="form:FormField">
           <name>ДополнительныеНачисленияДатаНачала</name>
@@ -1027,7 +1000,7 @@
             <common>true</common>
           </userVisible>
           <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ДополнительныеНачисления.СуммаНачисления</segments>
+            <segments>1/0:47e22629-8f1d-487f-9904-ec0219b55b4b/0:53737310-a440-45a3-ab92-c5da5ab5e599</segments>
           </dataPath>
           <extendedTooltip>
             <name>ДополнительныеНачисленияСуммаНачисленияРасширеннаяПодсказка</name>
@@ -1054,19 +1027,10 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>InputField</type>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:InputFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <wrap>true</wrap>
-            <chooseType>true</chooseType>
-            <typeDomainEnabled>true</typeDomainEnabled>
-            <textEdit>true</textEdit>
-          </extInfo>
         </items>
         <items xsi:type="form:FormField">
           <name>ДополнительныеНачисленияСуммаУдержания</name>
@@ -1493,9 +1457,7 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>CalculationRegister.ВКМ_ДополнительныеНачисления.StandardCommand.OpenByRecorder</command>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
+        <userVisible/>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>CalculationRegister.ВКМ_Удержания.StandardCommand.OpenByRecorder</command>

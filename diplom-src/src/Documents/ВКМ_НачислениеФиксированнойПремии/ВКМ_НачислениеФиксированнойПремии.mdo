@@ -111,51 +111,17 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="3ebccd10-e287-48f8-bd62-4f2a11e190d2">
-      <name>ВидРасчета</name>
+    <attributes uuid="13461b6e-c59a-4165-8184-29d7ef0f9b11">
+      <name>СуммаПремии</name>
       <synonym>
         <key>ru</key>
-        <value>Вид расчета</value>
-      </synonym>
-      <type>
-        <types>ChartOfCalculationTypesRef.ВКМ_ДополнительныеНачисления</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="fb4bea51-069c-4bc0-9ea4-a17c1114ffc3">
-      <name>СуммаНачисления</name>
-      <synonym>
-        <key>ru</key>
-        <value>Сумма начисления</value>
+        <value>Сумма премии</value>
       </synonym>
       <type>
         <types>Number</types>
         <numberQualifiers>
-          <precision>10</precision>
+          <precision>15</precision>
           <scale>2</scale>
-          <nonNegative>true</nonNegative>
-        </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="77aad481-a1a1-444d-94ac-279b58c446fe">
-      <name>СуммаКВыплате</name>
-      <synonym>
-        <key>ru</key>
-        <value>Сумма к выплате</value>
-      </synonym>
-      <type>
-        <types>Number</types>
-        <numberQualifiers>
-          <precision>10</precision>
-          <scale>2</scale>
-          <nonNegative>true</nonNegative>
         </numberQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>

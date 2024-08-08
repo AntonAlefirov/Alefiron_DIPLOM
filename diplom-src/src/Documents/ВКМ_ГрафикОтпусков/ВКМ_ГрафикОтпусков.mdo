@@ -66,6 +66,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.ВКМ_ДниОтпуска</registerRecords>
+  <registerRecords>InformationRegister.ВКМ_ГрафикиОтпусков</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="b1089fc8-4754-4db1-86c0-8fea4db2510b">

@@ -263,7 +263,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокСотрудников.ВидРасчета</segments>
+        <segments>1/0:829c61d6-ac38-4a74-80de-1c3529ed472d/0:3ebccd10-e287-48f8-bd62-4f2a11e190d2</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокСотрудниковВидРасчетаРасширеннаяПодсказка</name>
@@ -290,19 +290,10 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>СписокСотрудниковСуммаНачисления</name>
@@ -313,7 +304,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокСотрудников.СуммаНачисления</segments>
+        <segments>1/0:829c61d6-ac38-4a74-80de-1c3529ed472d/0:fb4bea51-069c-4bc0-9ea4-a17c1114ffc3</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокСотрудниковСуммаНачисленияРасширеннаяПодсказка</name>
@@ -340,19 +331,10 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>СписокСотрудниковСуммаКВыплате</name>
@@ -363,7 +345,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокСотрудников.СуммаКВыплате</segments>
+        <segments>1/0:829c61d6-ac38-4a74-80de-1c3529ed472d/0:77aad481-a1a1-444d-94ac-279b58c446fe</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокСотрудниковСуммаКВыплатеРасширеннаяПодсказка</name>
@@ -390,19 +372,10 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
     </items>
     <autoCommandBar>
       <name>СписокСотрудниковКоманднаяПанель</name>
