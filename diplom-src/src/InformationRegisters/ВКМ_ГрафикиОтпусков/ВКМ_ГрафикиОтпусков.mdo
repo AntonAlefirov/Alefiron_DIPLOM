@@ -49,8 +49,28 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
+  <informationRegisterPeriodicity>Year</informationRegisterPeriodicity>
   <writeMode>RecorderSubordinate</writeMode>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1082b495-9588-479f-8fce-6073cfd32333">
+    <name>ДнейОтпуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней отпуска</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <dimensions uuid="e5470788-7594-413f-8f62-19dca1765e38">
     <name>Дата</name>
     <synonym>
@@ -98,14 +118,6 @@
         <dateFractions>Date</dateFractions>
       </dateQualifiers>
     </type>
-    <format>
-      <key>ru</key>
-      <value>ДФ=dd.MM.yyyy</value>
-    </format>
-    <editFormat>
-      <key>ru</key>
-      <value>ДФ=dd.MM.yyyy</value>
-    </editFormat>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -125,14 +137,6 @@
         <dateFractions>Date</dateFractions>
       </dateQualifiers>
     </type>
-    <format>
-      <key>ru</key>
-      <value>ДФ=dd.MM.yyyy</value>
-    </format>
-    <editFormat>
-      <key>ru</key>
-      <value>ДФ=dd.MM.yyyy</value>
-    </editFormat>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>

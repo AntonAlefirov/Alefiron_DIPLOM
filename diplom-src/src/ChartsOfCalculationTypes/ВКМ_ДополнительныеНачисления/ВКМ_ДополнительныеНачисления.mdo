@@ -186,8 +186,15 @@
     </standardAttributes>
   </standardTabularSections>
   <predefined>
+    <items id="a4f86637-fa1e-439a-920e-96696a62cd72">
+      <name>ВКМ_ПроцентОтРабот</name>
+      <description>Процент от работ</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+    </items>
     <items id="8f5ab84a-ccdd-482c-a3a0-dd5b428f1357">
-      <name>ВКМ_ПремияФиксированная</name>
+      <name>ВКМ_ФиксированнаяПремия</name>
       <description>Фиксированная премия</description>
       <code xsi:type="core:StringValue">
         <value>1</value>

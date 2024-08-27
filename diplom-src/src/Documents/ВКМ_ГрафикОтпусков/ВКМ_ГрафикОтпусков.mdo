@@ -65,7 +65,6 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
-  <registerRecords>AccumulationRegister.ВКМ_ДниОтпуска</registerRecords>
   <registerRecords>InformationRegister.ВКМ_ГрафикиОтпусков</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>

@@ -60,8 +60,9 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>10</precision>
+        <precision>15</precision>
         <scale>2</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -79,7 +80,8 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>3</precision>
+        <precision>5</precision>
+        <scale>2</scale>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -96,22 +98,6 @@
     </synonym>
     <type>
       <types>CatalogRef.ВКМ_ФизическиеЛица</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <mainFilter>true</mainFilter>
-  </dimensions>
-  <dimensions uuid="c8bfb927-f999-44cf-85c9-eb66c4140cd1">
-    <name>Подразделение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подразделение</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ВКМ_Подразделения</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

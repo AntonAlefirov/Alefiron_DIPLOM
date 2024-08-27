@@ -20,7 +20,6 @@
   <content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content>
   <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
   <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
-  <content>Catalog.ВКМ_ГрафикиРаботы</content>
   <content>Catalog.ВКМ_Подразделения</content>
   <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
   <subsystems>ВКМ_ОбслуживаниеКлиентов</subsystems>

@@ -25,8 +25,9 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
+        <precision>3</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -44,6 +45,7 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>

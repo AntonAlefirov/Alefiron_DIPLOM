@@ -89,6 +89,9 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
   <standardTabularSections>
     <name>BaseCalculationTypes</name>
     <synonym>
@@ -186,12 +189,16 @@
     </standardAttributes>
   </standardTabularSections>
   <predefined>
-    <items id="2d1af204-78f0-4747-9b46-fe8ff29819e0">
-      <name>НДФЛ</name>
+    <items id="780bbba1-0252-48c7-8d41-e7dfed2c4980">
+      <name>ВКМ_НДФЛ</name>
       <description>НДФЛ</description>
       <code xsi:type="core:StringValue">
-        <value>1</value>
+        <value>0001</value>
       </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ВКМ_Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ВКМ_Отпуск</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.ВКМ_ПроцентОтРабот</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.ВКМ_ФиксированнаяПремия</base>
     </items>
   </predefined>
 </mdclass:ChartOfCalculationTypes>

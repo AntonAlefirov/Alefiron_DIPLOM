@@ -9,48 +9,51 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Сотрудник</dataPath>
 			<field>Сотрудник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник</v8:content>
+				</v8:item>
+			</title>
 			<role>
 				<dcscom:dimension>true</dcscom:dimension>
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ОтработанныеЧасы</dataPath>
-			<field>ОтработанныеЧасы</field>
+			<dataPath>СуммаКОплате</dataPath>
+			<field>СуммаКОплате</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отработанные часы</v8:content>
+					<v8:content>Сумма к оплате</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКВыплате</dataPath>
-			<field>СуммаКВыплате</field>
+			<dataPath>ЧасовКОплате</dataPath>
+			<field>ЧасовКОплате</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма к выплате</v8:content>
+					<v8:content>Часов к оплате</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ВКМ_ВыполненныеСотрудникомРаботыОбороты.Сотрудник,
-	ВКМ_ВыполненныеСотрудникомРаботыОбороты.ЧасовКОплатеПриход КАК ОтработанныеЧасы,
-	ВКМ_ВыполненныеСотрудникомРаботыОбороты.СуммаКОплатеПриход КАК СуммаКВыплате
+	ВКМ_ВыполненныеСотрудникомРаботыОбороты.Сотрудник КАК Сотрудник,
+	ВКМ_ВыполненныеСотрудникомРаботыОбороты.ЧасовКОплатеОборот КАК ЧасовКОплате,
+	ВКМ_ВыполненныеСотрудникомРаботыОбороты.СуммаКОплатеОборот КАК СуммаКОплате
 ИЗ
-	РегистрНакопления.ВКМ_ВыполненныеСотрудникомРаботы.Обороты КАК ВКМ_ВыполненныеСотрудникомРаботыОбороты
-{ГДЕ
-	ВКМ_ВыполненныеСотрудникомРаботыОбороты.Сотрудник.Ссылка = &amp;Ссылка}</query>
-		<useQueryGroupIfPossible>false</useQueryGroupIfPossible>
+	РегистрНакопления.ВКМ_ВыполненныеСотрудникомРаботы.Обороты КАК ВКМ_ВыполненныеСотрудникомРаботыОбороты</query>
 	</dataSet>
 	<totalField>
-		<dataPath>ОтработанныеЧасы</dataPath>
-		<expression>Сумма(ОтработанныеЧасы)</expression>
+		<dataPath>ЧасовКОплате</dataPath>
+		<expression>Сумма(ЧасовКОплате)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>СуммаКВыплате</dataPath>
-		<expression>Сумма(СуммаКВыплате)</expression>
+		<dataPath>СуммаКОплате</dataPath>
+		<expression>Сумма(СуммаКОплате)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -69,6 +72,7 @@
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 		<expression>&amp;Период.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>КонецПериода</name>
@@ -87,20 +91,7 @@
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>false</useRestriction>
 		<expression>&amp;Период.ДатаОкончания</expression>
-	</parameter>
-	<parameter>
-		<name>Ссылка</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Сотрудник</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВКМ_ФизическиеЛица</v8:Type>
-		</valueType>
-		<value xsi:nil="true"/>
-		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>Период</name>
@@ -122,25 +113,32 @@
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
-		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выработка специалистов</v8:content>
+			</v8:item>
+		</dcsset:presentation>
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Сотрудник</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКВыплате</dcsset:field>
+					<dcsset:field>ЧасовКОплате</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ОтработанныеЧасы</dcsset:field>
+					<dcsset:field>СуммаКОплате</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>ec7c0e87-8a14-4989-af69-656699337aa5</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
 			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Ссылка</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>6c87db84-17f9-4892-8bf2-35f95802d850</dcsset:userSettingID>
-				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>Период</dcscor:parameter>
 					<dcscor:value xsi:type="v8:StandardPeriod">
@@ -153,16 +151,20 @@
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Заголовок</dcscor:parameter>
-					<dcscor:value xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выработка специалиста</v8:content>
-						</v8:item>
-					</dcscor:value>
+					<dcscor:value xsi:type="v8:LocalStringType"/>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
 					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
@@ -172,15 +174,6 @@
 				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>СуммаКВыплате</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>ОтработанныеЧасы</dcsset:field>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Сотрудник</dcsset:field>
-					</dcsset:item>
 				</dcsset:selection>
 			</dcsset:item>
 		</dcsset:settings>

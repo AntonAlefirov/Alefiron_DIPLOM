@@ -16,6 +16,7 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
   <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -111,17 +112,16 @@
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="cbc5d917-44f8-40b4-9e9c-8ab1bac22881">
-    <name>НДФЛ</name>
+    <name>Результат</name>
     <synonym>
       <key>ru</key>
-      <value>НДФЛ</value>
+      <value>Результат</value>
     </synonym>
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>10</precision>
+        <precision>15</precision>
         <scale>2</scale>
-        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>

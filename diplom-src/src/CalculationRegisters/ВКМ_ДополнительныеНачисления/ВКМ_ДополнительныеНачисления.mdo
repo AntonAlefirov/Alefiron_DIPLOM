@@ -120,45 +120,14 @@
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>10</precision>
+        <precision>15</precision>
         <scale>2</scale>
-        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="09f70649-2259-4eec-950a-7fbefaee7877">
-    <name>Показатель</name>
-    <synonym>
-      <key>ru</key>
-      <value>Показатель</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>10</precision>
-        <scale>2</scale>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </attributes>
-  <attributes uuid="382ff963-493c-4d42-86c7-2b65093f7727">
-    <name>ГрафикРаботы</name>
-    <synonym>
-      <key>ru</key>
-      <value>График работы</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </attributes>
   <dimensions uuid="c2dcf8b2-ac18-44bf-90a1-eb0dd8395044">
     <name>Сотрудник</name>
     <synonym>

@@ -15,6 +15,6 @@
   <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
   <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
-  <content>AccumulationRegister.ВКМ_ВыставленныеКОплатеРаботы</content>
+  <content>5655bf4a-d962-4e1f-b1a3-f6cc0634550d</content>
   <parentSubsystem>Subsystem.ВКМ_ДобавленныеОбъекты</parentSubsystem>
 </mdclass:Subsystem>

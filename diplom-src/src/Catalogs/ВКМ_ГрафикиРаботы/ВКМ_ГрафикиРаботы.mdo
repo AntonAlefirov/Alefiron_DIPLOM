@@ -106,24 +106,4 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <defaultObjectForm>Catalog.ВКМ_ГрафикиРаботы.Form.ФормаЭлемента</defaultObjectForm>
-  <defaultListForm>Catalog.ВКМ_ГрафикиРаботы.Form.ФормаСписка</defaultListForm>
-  <forms uuid="75803070-bbf6-4b81-960b-62ac36fd10a4">
-    <name>ФормаЭлемента</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма элемента</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="04a22c68-4006-423e-9a10-c6d368c465be">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
 </mdclass:Catalog>

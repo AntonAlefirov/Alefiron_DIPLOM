@@ -144,7 +144,7 @@
   </items>
   <items xsi:type="form:Table">
     <name>СписокСотрудников</name>
-    <id>88</id>
+    <id>118</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -156,7 +156,7 @@
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
       <name>СписокСотрудниковНомерСтроки</name>
-      <id>101</id>
+      <id>131</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -167,7 +167,7 @@
       </dataPath>
       <extendedTooltip>
         <name>СписокСотрудниковНомерСтрокиРасширеннаяПодсказка</name>
-        <id>103</id>
+        <id>133</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -182,7 +182,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СписокСотрудниковНомерСтрокиКонтекстноеМеню</name>
-        <id>102</id>
+        <id>132</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -190,23 +190,19 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>InputField</type>
-      <editMode>Enter</editMode>
+      <type>LabelField</type>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
+      <extInfo xsi:type="form:LabelFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
       <name>СписокСотрудниковСотрудник</name>
-      <id>104</id>
+      <id>134</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -217,7 +213,7 @@
       </dataPath>
       <extendedTooltip>
         <name>СписокСотрудниковСотрудникРасширеннаяПодсказка</name>
-        <id>106</id>
+        <id>136</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -232,7 +228,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СписокСотрудниковСотрудникКонтекстноеМеню</name>
-        <id>105</id>
+        <id>135</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -241,7 +237,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
-      <editMode>Enter</editMode>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
@@ -249,25 +245,26 @@
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>СписокСотрудниковВидРасчета</name>
-      <id>107</id>
+      <name>СписокСотрудниковСуммаПремии</name>
+      <id>137</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>1/0:829c61d6-ac38-4a74-80de-1c3529ed472d/0:3ebccd10-e287-48f8-bd62-4f2a11e190d2</segments>
+        <segments>Объект.СписокСотрудников.СуммаПремии</segments>
       </dataPath>
       <extendedTooltip>
-        <name>СписокСотрудниковВидРасчетаРасширеннаяПодсказка</name>
-        <id>109</id>
+        <name>СписокСотрудниковСуммаПремииРасширеннаяПодсказка</name>
+        <id>139</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -281,8 +278,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>СписокСотрудниковВидРасчетаКонтекстноеМеню</name>
-        <id>108</id>
+        <name>СписокСотрудниковСуммаПремииКонтекстноеМеню</name>
+        <id>138</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -290,96 +287,24 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <editMode>Enter</editMode>
+      <type>InputField</type>
+      <editMode>EnterOnInput</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>СписокСотрудниковСуммаНачисления</name>
-      <id>110</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>1/0:829c61d6-ac38-4a74-80de-1c3529ed472d/0:fb4bea51-069c-4bc0-9ea4-a17c1114ffc3</segments>
-      </dataPath>
-      <extendedTooltip>
-        <name>СписокСотрудниковСуммаНачисленияРасширеннаяПодсказка</name>
-        <id>112</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>СписокСотрудниковСуммаНачисленияКонтекстноеМеню</name>
-        <id>111</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-    </items>
-    <items xsi:type="form:FormField">
-      <name>СписокСотрудниковСуммаКВыплате</name>
-      <id>113</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>1/0:829c61d6-ac38-4a74-80de-1c3529ed472d/0:77aad481-a1a1-444d-94ac-279b58c446fe</segments>
-      </dataPath>
-      <extendedTooltip>
-        <name>СписокСотрудниковСуммаКВыплатеРасширеннаяПодсказка</name>
-        <id>115</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>СписокСотрудниковСуммаКВыплатеКонтекстноеМеню</name>
-        <id>114</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
+        <wrap>true</wrap>
+        <extendedEditMultipleValues>true</extendedEditMultipleValues>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
     </items>
     <autoCommandBar>
       <name>СписокСотрудниковКоманднаяПанель</name>
-      <id>89</id>
+      <id>120</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -395,10 +320,10 @@
         <common>true</common>
       </userVisible>
       <name>СписокСотрудниковСтрокаПоиска</name>
-      <id>92</id>
+      <id>122</id>
       <extendedTooltip>
         <name>СписокСотрудниковСтрокаПоискаРасширеннаяПодсказка</name>
-        <id>94</id>
+        <id>124</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -413,7 +338,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СписокСотрудниковСтрокаПоискаКонтекстноеМеню</name>
-        <id>93</id>
+        <id>123</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -433,10 +358,10 @@
         <common>true</common>
       </userVisible>
       <name>СписокСотрудниковСостояниеПросмотра</name>
-      <id>98</id>
+      <id>125</id>
       <extendedTooltip>
         <name>СписокСотрудниковСостояниеПросмотраРасширеннаяПодсказка</name>
-        <id>100</id>
+        <id>127</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -451,7 +376,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СписокСотрудниковСостояниеПросмотраКонтекстноеМеню</name>
-        <id>99</id>
+        <id>126</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -472,10 +397,10 @@
         <common>true</common>
       </userVisible>
       <name>СписокСотрудниковУправлениеПоиском</name>
-      <id>95</id>
+      <id>128</id>
       <extendedTooltip>
         <name>СписокСотрудниковУправлениеПоискомРасширеннаяПодсказка</name>
-        <id>97</id>
+        <id>130</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -490,7 +415,7 @@
       </extendedTooltip>
       <contextMenu>
         <name>СписокСотрудниковУправлениеПоискомКонтекстноеМеню</name>
-        <id>96</id>
+        <id>129</id>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
@@ -506,7 +431,7 @@
     </searchControlAddition>
     <extendedTooltip>
       <name>СписокСотрудниковРасширеннаяПодсказка</name>
-      <id>91</id>
+      <id>121</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -521,7 +446,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>СписокСотрудниковКонтекстноеМеню</name>
-      <id>90</id>
+      <id>119</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -529,6 +454,7 @@
       </userVisible>
       <autoFill>true</autoFill>
     </contextMenu>
+    <representation>HierarchicalList</representation>
     <changeRowSet>true</changeRowSet>
     <changeRowOrder>true</changeRowOrder>
     <autoMaxWidth>true</autoMaxWidth>
@@ -542,10 +468,13 @@
     <verticalScrollBar>AutoUse</verticalScrollBar>
     <horizontalLines>true</horizontalLines>
     <verticalLines>true</verticalLines>
+    <autoInsertNewRow>true</autoInsertNewRow>
     <searchOnInput>Auto</searchOnInput>
     <initialListView>Auto</initialListView>
     <horizontalStretch>true</horizontalStretch>
     <verticalStretch>true</verticalStretch>
+    <enableStartDrag>true</enableStartDrag>
+    <enableDrag>true</enableDrag>
     <fileDragMode>AsFileRef</fileDragMode>
     <rowFilter xsi:type="core:UndefinedValue"/>
   </items>

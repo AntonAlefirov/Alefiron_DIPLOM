@@ -51,16 +51,15 @@
   </standardAttributes>
   <dataLockControlMode>Managed</dataLockControlMode>
   <resources uuid="914051ab-a918-487a-8ce9-b5e8118a1f30">
-    <name>Значение</name>
+    <name>РабочихДней</name>
     <synonym>
       <key>ru</key>
-      <value>Значение</value>
+      <value>Рабочих дней</value>
     </synonym>
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>5</precision>
-        <scale>2</scale>
+        <precision>2</precision>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
@@ -84,6 +83,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>

@@ -91,7 +91,6 @@
   <choiceMode>BothWays</choiceMode>
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
   <standardTabularSections>
     <name>BaseCalculationTypes</name>
@@ -191,21 +190,20 @@
   </standardTabularSections>
   <predefined>
     <items id="d9642876-d20a-4bad-a4e5-327554befccf">
-      <name>Оклад</name>
+      <name>ВКМ_Оклад</name>
       <description>Оклад</description>
       <code xsi:type="core:StringValue">
         <value>1</value>
       </code>
-      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</displaced>
+      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ВКМ_Отпуск</displaced>
     </items>
     <items id="0c4b3f13-2104-4901-bc65-df363b0b596c">
-      <name>Отпуск</name>
+      <name>ВКМ_Отпуск</name>
       <description>Отпуск</description>
       <code xsi:type="core:StringValue">
         <value>2</value>
       </code>
-      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
-      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</base>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.ВКМ_Оклад</base>
     </items>
   </predefined>
 </mdclass:ChartOfCalculationTypes>

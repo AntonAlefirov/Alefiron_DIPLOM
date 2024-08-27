@@ -6,6 +6,10 @@
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
+      <command>Catalog.ВКМ_ГрафикиРаботы.StandardCommand.OpenList</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
       <command>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
